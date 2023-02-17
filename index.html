@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh_cn">
+<head>
+    <meta charset="UTF-8">
+    <title>小说打包下载器</title>
+    <style>
+        @import "style.css";
+    </style>
+</head>
+<body>
+<div class="InformationInputDiv">
+    <h1>小说打包下载器</h1>
+    <input id="bookUrlInput" placeholder="请输入小说链接" type="url">
+    <form method="POST" enctype="multipart/form-data" action="/updateCover" target="temp_iframe">
+        <div class="chooseCoverDiv">
+            <div class="inputDiv">
+                <input type="file" name="file" accept="image/jpeg" id="coverChoose">
+                <input type="submit" value="上传" id="upLoadInput">
+            </div>
+            <div class="buttonDiv">
+                <button id="coverChooseButton">选择封面</button>
+                <button id="upLoadButton">上传</button>
+            </div>
+        </div>
+    </form>
+    <p id="isLoadFinish"></p>
+    <button id="verifyButton">确定</button>
+    <p id="error"></p>
+    <a id="downloadUrl"></a>
+    <a id="howToUse" onclick="openHelp()">如何使用?</a>
+</div>
+<div class="helpDiv"></div>
+<iframe id="temp_iframe" name="temp_iframe" style="display: none"></iframe>
+<script src='main.js' type='text/javascript'></script>
+</body>
+</html>
