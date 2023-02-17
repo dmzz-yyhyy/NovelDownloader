@@ -1,5 +1,5 @@
 # Novel Downloader
-一个基于python后端的小说下载器网站项目
+一个基于python后端的小说下载器网站项
 
 目前仍在开发，还请多提建议
 ## 项目功能
@@ -15,6 +15,7 @@
  - requests
  - lxml
  - ebooklib
+
 有些是标准库，无需安装。
 ## 注意事项
 项目基于python后端
